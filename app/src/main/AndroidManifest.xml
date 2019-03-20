@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.nguye.capston1_dtu">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Controller.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Controller.forgot_password"></activity>
+        <activity android:name=".Controller.profileHome"></activity>
+        <activity android:name=".Controller.profile" />
+        <activity android:name=".Controller.MainActivity" />
+        <activity android:name=".Controller.MainActivity_Chinh" />
+        <activity
+            android:name=".Controller.Show_CT"
+            tools:ignore="InnerclassSeparator" >
+        </activity>
+        <activity android:name=".Controller.List_Image_cong_thuc">
+
+        </activity>
+        <!--// bai hoc-->
+        <activity android:name=".Controller.List_Image_Bai_Hoc">
+        </activity>
+    </application>
+
+</manifest>
